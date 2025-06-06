@@ -11,6 +11,7 @@
 </head>
 <body>
     <div class="container mt-5">
+        <a href="{% url 'manga_list' %}" class="btn btn-secondary mb-3">← Voltar para a lista de mangás</a>
         <h1 class="mb-3">{{ manga.title }}</h1>
 
         <div class="row">
@@ -51,7 +52,7 @@
 
                         <form action="{% url 'create_chapter' manga.id %}" method="post">
                             {% csrf_token %}
-                             <button type="submit">Adicionar Capítulo</button>
+                             <button type="submit" class="btn btn-primary">Adicionar Capítulo</button>
                         </form>
                     </li>
                     {% for chapter in manga.chapters.all %}
@@ -69,7 +70,7 @@
                         </li>
                     {% endfor %}
                 </ul>
-                <a href="{% url 'manga_list' %}" class="btn btn-primary">Voltar para a lista de mangás</a>
+                <a href="{% url 'manga_list' %}" class="btn btn-secondary">Voltar para a lista de mangás</a>
             </div>
         </div>
     </div>
