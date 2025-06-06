@@ -27,12 +27,28 @@
                 <ul class="list-group mb-4">
                     <li class="list-group-item"><strong>Autor:</strong> {{ manga.author }}</li>
                     <li class="list-group-item"><strong>Total Chapters:</strong> {{ chapter_count }}</li>
+                    <li class="list-group-item">
+                        <strong>Total Chapters:</strong> {{ chapter_count }}<br>
+
+                        <div class="d-flex align-items-center">
+                            <strong class="me-2">Owned:</strong>
+                            <div class="flex-grow-1">
+                                <div class="progress" style="height: 1.25rem;">
+                                    <div class="progress-bar bg-success" role="progressbar"
+                                        style="width: {{ owned_percent }}%;"
+                                        aria-valuenow="{{ owned_percent }}" aria-valuemin="0" aria-valuemax="100">
+                                        {{ owned_percent }}%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>                  
                     <li class="list-group-item"><strong>Descrição:</strong> {{ manga.description }}</li>
                 </ul>
                 <h2>Chapters</h2>
                 <ul class="list-group mb-4">
                     <li class="list-group-item">
-                        <!-- Botão para criar um novo capítulo -->
+
                         <form action="{% url 'create_chapter' manga.id %}" method="post">
                             {% csrf_token %}
                              <button type="submit">Adicionar Capítulo</button>

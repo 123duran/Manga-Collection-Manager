@@ -9,8 +9,18 @@ def manga_list(request):
 
 def manga_detail(request, manga_id):
     manga = get_object_or_404(Manga, id=manga_id)
-    chapter_count = manga.chapters.count()  # Conta os capítulos relacionados ao mangá
-    return render(request, 'mangas/manga_detail.html', {'manga': manga, 'chapter_count': chapter_count})
+    chapters = manga.chapters.all()
+    chapter_count = chapters.count()
+
+    owned_count = chapters.filter(owned=True).count()
+
+    owned_percent = round((owned_count / chapter_count) * 100) if chapter_count > 0 else 0
+
+    return render(request, 'mangas/manga_detail.html', {
+        'manga': manga,
+        'chapter_count': chapter_count,
+        'owned_percent': owned_percent,
+    })
 
 def toggle_owned_chapter(request, id):
     chapter = get_object_or_404(Chapter, id= id)
