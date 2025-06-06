@@ -37,20 +37,21 @@
                             {% csrf_token %}
                              <button type="submit">Adicionar Capítulo</button>
                         </form>
-                    </li>    
+                    </li>
                     {% for chapter in manga.chapters.all %}
-                            <li class="list-group-item">
-                                Chapter {{ chapter.number }} - 
-                                Acquired: {% if chapter.date_acquired %} {{ chapter.date_acquired }} {% else %} Not acquired {% endif %} -
-                                Owned: {% if chapter.owned %} Yes {% else %} No {% endif %}
-                                <form action="{% url 'toggle_owned_chapter' chapter.id %}" method="post">
-                                    {% csrf_token %}
-                                    <button type="submit" class="btn btn-primary">
-                                        {% if chapter.owned %} Mark as Not Owned {% else %} Mark as Owned {% endif %}
-                                    </button>
-                                </form>
-                            </li>
-                        {% endfor %}
+                        <li class="list-group-item">
+                            Chapter {{ chapter.number }} - 
+                            Acquired: {% if chapter.date_acquired %} {{ chapter.date_acquired }} {% else %} Not acquired {% endif %} -
+                            Owned: {% if chapter.owned %} Yes {% else %} No {% endif %}
+
+                            <form action="{% url 'toggle_owned_chapter' chapter.id %}" method="post" class="mt-2">
+                                {% csrf_token %}
+                                <button type="submit" class="btn {% if chapter.owned %}btn-success{% else %}btn-warning{% endif %}">
+                                    {% if chapter.owned %} Mark as Not Owned {% else %} Mark as Owned {% endif %}
+                                </button>
+                            </form>
+                        </li>
+                    {% endfor %}
                 </ul>
                 <a href="{% url 'manga_list' %}" class="btn btn-primary">Voltar para a lista de mangás</a>
             </div>
