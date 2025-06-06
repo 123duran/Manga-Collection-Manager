@@ -1,8 +1,37 @@
-from django.shortcuts import render
-# mangas/views.py
+from django.utils import timezone
+from django.shortcuts import render, get_object_or_404, redirect
+from django.urls import reverse
+from .models import Manga, Chapter
 
-from django.http import HttpResponse
+def manga_list(request):
+    mangas = Manga.objects.all()  # Retrieve all mangas
+    return render(request, 'mangas/manga_list.html', {'mangas': mangas})
 
-def index(request):
-    return HttpResponse("Bem-vindo ao app Mangás!")
+def manga_detail(request, manga_id):
+    manga = get_object_or_404(Manga, id=manga_id)
+    chapter_count = manga.chapters.count()  # Conta os capítulos relacionados ao mangá
+    return render(request, 'mangas/manga_detail.html', {'manga': manga, 'chapter_count': chapter_count})
 
+def toggle_owned_chapter(request, id):
+    chapter = get_object_or_404(Chapter, id= id)
+    if not chapter.owned:  # Se o capítulo não estava marcado como "possui"
+        chapter.owned = True
+        chapter.date_acquired = timezone.now().date()  # Define a data atual
+    else:  # Se o capítulo estava marcado como "possui"
+        chapter.owned = False
+        chapter.date_acquired = None  # Remove a data de aquisição
+    chapter.save()
+    return redirect(reverse('manga_detail', args=[chapter.manga.id]))  # Redireciona de volta para a página do mangá
+
+def create_chapter(request, manga_id):
+    manga = get_object_or_404(Manga, id =manga_id)
+
+    last_chapter = Chapter.objects.filter(manga=manga).order_by('-number').first()
+    next_number = last_chapter.number + 1 if last_chapter else 1
+
+    Chapter.objects.create(
+    manga=manga,
+    number=next_number,
+    owned=False)
+    
+    return redirect(reverse('manga_detail', args=[manga.id]))  # Redireciona de volta para a página do mangá
