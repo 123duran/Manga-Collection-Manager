@@ -13,10 +13,16 @@
         {% if manga.cover %}
             <img src="{{ manga.cover }}" alt="Capa de {{ manga.title }}" class="card-img-top img-fluid rounded">
         {% else %}
-            <div class="card-img-top no-cover-placeholder rounded d-flex align-items-center justify-content-center">
+            <div class="card-img-top no-cover-placeholder rounded d-flex align-items-center justify-content-center" style="height: 250px;">
                 Nenhuma capa disponível.
             </div>
         {% endif %}
+
+        <!-- Botões Editar e Deletar -->
+        <div class="d-flex gap-2 mt-3">
+            <a href="{% url 'manga_edit' manga.id %}" class="btn btn-primary flex-fill">Editar Manga</a>
+            <a href="{% url 'manga_delete' manga.id %}" class="btn btn-danger flex-fill">Deletar Manga</a>
+        </div>
     </div>
 
     <!-- Informações do Mangá -->
@@ -66,7 +72,6 @@
         </ul>
 
         <a href="{% url 'manga_list' %}" class="btn btn-secondary">Voltar para a lista de mangás</a>
-        <a href="{% url 'manga_delete' manga.id %}" class="btn btn-danger me-2">Delete Manga</a>
     </div>
 </div>
 {% endblock %}

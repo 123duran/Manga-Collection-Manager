@@ -5,13 +5,19 @@ from .models import Manga, Chapter
 from .forms import MangaForm
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.views.generic import DeleteView
+from django.views.generic import DeleteView, UpdateView
+
 
 @login_required
 def manga_list(request):
     mangas = Manga.objects.all()  # Retrieve all mangas
     return render(request, 'mangas/manga_list.html', {'mangas': mangas})
 
+class MangaUpdateView(LoginRequiredMixin, UpdateView):
+    model = Manga
+    fields = ['title', 'author', 'volumes', 'release_date', 'description', 'cover']
+    template_name = 'mangas/manga_form.html'
+    success_url = reverse_lazy('manga_list')
 
 class MangaDeleteView(LoginRequiredMixin, DeleteView):
     model = Manga
