@@ -3,7 +3,9 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.urls import reverse
 from .models import Manga, Chapter
 from .forms import MangaForm
+from django.contrib.auth.decorators import login_required
 
+@login_required
 def manga_list(request):
     mangas = Manga.objects.all()  # Retrieve all mangas
     return render(request, 'mangas/manga_list.html', {'mangas': mangas})
