@@ -1,14 +1,22 @@
 from django.utils import timezone
 from django.shortcuts import render, get_object_or_404, redirect
-from django.urls import reverse
+from django.urls import reverse, reverse_lazy
 from .models import Manga, Chapter
 from .forms import MangaForm
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.views.generic import DeleteView
 
 @login_required
 def manga_list(request):
     mangas = Manga.objects.all()  # Retrieve all mangas
     return render(request, 'mangas/manga_list.html', {'mangas': mangas})
+
+
+class MangaDeleteView(LoginRequiredMixin, DeleteView):
+    model = Manga
+    template_name = 'mangas/manga_confirm_delete.html'
+    success_url = reverse_lazy('manga_list')
 
 def manga_detail(request, manga_id):
     manga = get_object_or_404(Manga, id=manga_id)

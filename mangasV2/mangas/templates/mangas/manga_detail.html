@@ -66,6 +66,7 @@
         </ul>
 
         <a href="{% url 'manga_list' %}" class="btn btn-secondary">Voltar para a lista de mangás</a>
+        <a href="{% url 'manga_delete' manga.id %}" class="btn btn-danger me-2">Delete Manga</a>
     </div>
 </div>
 {% endblock %}
