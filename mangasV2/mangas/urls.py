@@ -8,4 +8,5 @@ urlpatterns = [
     path('<int:manga_id>/', views.manga_detail, name='manga_detail'),  # Manga Details
     path('chapter/<int:id>/toggle-owned/', views.toggle_owned_chapter, name='toggle_owned_chapter'),  # Toggle ownership
     path('manga/<int:manga_id>/create-chapter/', views.create_chapter, name='create_chapter'),  # Create chapter
+    path('create/', views.manga_create, name='manga_create'), # Create Manga
 ]

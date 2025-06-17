@@ -2,6 +2,7 @@ from django.utils import timezone
 from django.shortcuts import render, get_object_or_404, redirect
 from django.urls import reverse
 from .models import Manga, Chapter
+from .forms import MangaForm
 
 def manga_list(request):
     mangas = Manga.objects.all()  # Retrieve all mangas
@@ -45,3 +46,13 @@ def create_chapter(request, manga_id):
     owned=False)
     
     return redirect(reverse('manga_detail', args=[manga.id]))  # Redireciona de volta para a página do mangá
+
+def manga_create(request):
+    if request.method == 'POST':
+        form = MangaForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('manga_list')  # ou outra página de sucesso
+    else:
+        form = MangaForm()
+    return render(request, 'mangas/manga_form.html', {'form': form})
