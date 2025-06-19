@@ -16,4 +16,4 @@ RUN pip install --upgrade pip && pip install -r requirements.txt
 COPY . /mangasV2/
 
 # Run app (update 'your_project.wsgi' to your actual WSGI module)
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "mangasV2.wsgi:application"]
+CMD ["gunicorn", "--bind", "0.0.0.0:8080", "mangasV2.wsgi:application"]
