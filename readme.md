@@ -38,7 +38,7 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-🔧 Run migrations
+## 🔧 Run migrations
 ``` bash
 python manage.py migrate
 ```
