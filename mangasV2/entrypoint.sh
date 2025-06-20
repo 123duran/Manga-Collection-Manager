@@ -1,6 +1,9 @@
 #!/bin/bash
 set -e
 
+echo "Garantindo que o arquivo de banco de dados exista em /data..."
+touch /data/db.sqlite3
+
 echo "Rodando migrations..."
 python manage.py migrate
 
@@ -22,18 +25,17 @@ if username and email and password:
         print(f"Superusuário {username} já existe")
 else:
     print("Variáveis de ambiente do superusuário não definidas, pulando criação")
-
 END
 
 echo "Verificando dados de Manga e Chapter..."
-
 python manage.py shell << END
 from mangas.models import Manga, Chapter
+import os
+
 if Manga.objects.exists() or Chapter.objects.exists():
     print("Dados de Manga e/ou Chapter já existem, pulando importação.")
 else:
     print("Nenhum dado encontrado. Importando mangas_data.json...")
-    import os
     os.system('python manage.py loaddata mangas_data.json')
 END
 
