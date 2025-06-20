@@ -24,6 +24,11 @@ jobs:
           cd mangasV2
           pip install -r requirements.txt
 
+      - name: Run migrations
+        run: |
+          cd mangasV2
+          python manage.py migrate
+
       - name: Set up Fly.io CLI
         uses: superfly/flyctl-actions/setup-flyctl@master
 
