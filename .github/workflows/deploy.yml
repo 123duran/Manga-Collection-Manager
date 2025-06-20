@@ -16,6 +16,7 @@ jobs:
 
       - name: Set Fly secrets (superuser credentials)
         run: |
+          cd mangasV2
           flyctl secrets set \
             DJANGO_SUPERUSER_USERNAME=${{ secrets.DJANGO_SUPERUSER_USERNAME }} \
             DJANGO_SUPERUSER_EMAIL=${{ secrets.DJANGO_SUPERUSER_EMAIL }} \
