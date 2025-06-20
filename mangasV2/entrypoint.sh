@@ -25,8 +25,17 @@ else:
 
 END
 
-echo "Carregando dados iniciais do mangas_data.json..."
-python manage.py loaddata mangas_data.json
+echo "Verificando dados de Manga e Chapter..."
+
+python manage.py shell << END
+from mangasV2.models import Manga, Chapter
+if Manga.objects.exists() or Chapter.objects.exists():
+    print("Dados de Manga e/ou Chapter já existem, pulando importação.")
+else:
+    print("Nenhum dado encontrado. Importando mangas_data.json...")
+    import os
+    os.system('python manage.py loaddata mangas_data.json')
+END
 
 echo "Iniciando Gunicorn..."
 exec gunicorn mangasV2.wsgi:application --bind 0.0.0.0:8080
