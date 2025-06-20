@@ -1,3 +1,5 @@
+# Refer to https://fly.io/docs/app-guides/continuous-deployment-with-github-actions/
+
 name: Fly Deploy
 on: [push]
 env:
@@ -9,4 +11,6 @@ jobs:
       steps:
         - uses: actions/checkout@v2
         - uses: superfly/flyctl-actions/setup-flyctl@master
-        - run: flyctl deploy --remote-only
+        - run: |
+            cd mangasV2
+            flyctl deploy --remote-only
