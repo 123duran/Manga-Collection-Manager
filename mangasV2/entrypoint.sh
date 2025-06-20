@@ -1,10 +1,29 @@
 #!/bin/bash
-
-# Abort on errors
 set -e
 
-echo "Applying database migrations..."
-python manage.py migrate --noinput
+echo "Rodando migrations..."
+python manage.py migrate
 
-echo "Starting Gunicorn..."
+echo "Criando superusuário se não existir..."
+python manage.py shell << END
+from django.contrib.auth import get_user_model
+import os
+
+User = get_user_model()
+username = os.environ.get('DJANGO_SUPERUSER_USERNAME')
+email = os.environ.get('DJANGO_SUPERUSER_EMAIL')
+password = os.environ.get('DJANGO_SUPERUSER_PASSWORD')
+
+if username and email and password:
+    if not User.objects.filter(username=username).exists():
+        print(f"Criando superusuário {username}")
+        User.objects.create_superuser(username, email, password)
+    else:
+        print(f"Superusuário {username} já existe")
+else:
+    print("Variáveis de ambiente do superusuário não definidas, pulando criação")
+
+END
+
+echo "Iniciando Gunicorn..."
 exec gunicorn mangasV2.wsgi:application --bind 0.0.0.0:8080
