@@ -15,5 +15,8 @@ RUN pip install --upgrade pip && pip install -r requirements.txt
 # Copy project files
 COPY . /mangasV2/
 
-# Run app (update 'your_project.wsgi' to your actual WSGI module)
-CMD ["gunicorn", "--bind", "0.0.0.0:8080", "mangasV2.wsgi:application"]
+# Copy and set entrypoint
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+ENTRYPOINT ["/entrypoint.sh"]
