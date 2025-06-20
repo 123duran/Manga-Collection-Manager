@@ -103,5 +103,4 @@ Important: Copy this token immediately as you won’t be able to see it again.
 🔐 Authentication
 
     All manga management features require login.
-
     Public pages (like list/detail) can be made accessible without login, depending on project settings.
