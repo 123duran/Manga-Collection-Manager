@@ -25,5 +25,6 @@ else:
 
 END
 
+
 echo "Iniciando Gunicorn..."
 exec gunicorn mangasV2.wsgi:application --bind 0.0.0.0:8080
