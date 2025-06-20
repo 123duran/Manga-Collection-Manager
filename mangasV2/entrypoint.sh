@@ -28,7 +28,7 @@ END
 echo "Verificando dados de Manga e Chapter..."
 
 python manage.py shell << END
-from mangasV2.models import Manga, Chapter
+from mangas.models import Manga, Chapter
 if Manga.objects.exists() or Chapter.objects.exists():
     print("Dados de Manga e/ou Chapter já existem, pulando importação.")
 else:
