@@ -3,7 +3,7 @@ name: Deploy Django App to Fly.io
 on:
   push:
     branches:
-      - main  # Altere se seu branch de produção for diferente
+      - main
 
 jobs:
   deploy:
@@ -16,7 +16,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'  # Ajuste para a versão que seu projeto usa
+          python-version: '3.11'
 
       - name: Install dependencies
         run: |
@@ -29,7 +29,7 @@ jobs:
 
       - name: Deploy to Fly.io
         run: |
-          pwd
+          cd mangasV2
           flyctl deploy --remote-only
         env:
           FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
