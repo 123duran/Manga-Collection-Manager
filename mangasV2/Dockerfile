@@ -9,14 +9,18 @@ ENV PYTHONUNBUFFERED 1
 WORKDIR /mangasV2
 
 # Install dependencies
-COPY requirements.txt /mangasV2/
+COPY requirements.txt .
 RUN pip install --upgrade pip && pip install -r requirements.txt
 
 # Copy project files
-COPY . /mangasV2/
+COPY . .
 
-# Copy and set entrypoint
+# Copia o entrypoint e dá permissão
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
+# Expõe a porta esperada pelo Fly.io
+EXPOSE 8080
+
+# Usa o script como ponto de entrada
 ENTRYPOINT ["/entrypoint.sh"]
