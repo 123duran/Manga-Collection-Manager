@@ -25,6 +25,8 @@ else:
 
 END
 
+echo "Carregando dados iniciais do mangas_data.json..."
+python manage.py loaddata mangas_data.json
 
 echo "Iniciando Gunicorn..."
 exec gunicorn mangasV2.wsgi:application --bind 0.0.0.0:8080

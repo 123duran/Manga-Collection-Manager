@@ -1,0 +1,1463 @@
+[
+{
+  "model": "mangas.manga",
+  "pk": 3,
+  "fields": {
+    "title": "Spy Family",
+    "author": "Tatsuya Endo",
+    "volumes": 14,
+    "release_date": "2021-04-11",
+    "description": "The series follows master spy Twilight, who must disguise himself as psychiatrist Loid Forger and build a mock family in order to investigate political leader Donovan Desmond. Unbeknownst to him, his wife, Yor, is actually an assassin known as the Thorn Princess, while his daughter, Anya, has telepathic abilities.",
+    "cover": "https://m.media-amazon.com/images/I/71vMGRog+iL.jpg",
+    "date_added": "2025-06-06T16:43:30.614Z"
+  }
+},
+{
+  "model": "mangas.manga",
+  "pk": 4,
+  "fields": {
+    "title": "Cells at Work",
+    "author": "Akane Shimizu",
+    "volumes": 10,
+    "release_date": "2015-01-01",
+    "description": "The series depicts the inner workings of the human body personified by anthropomorphized cells, focusing on the daily lives of red and white blood cells as they protect the body from pathogens.",
+    "cover": "https://m.media-amazon.com/images/I/71InZY+so6L.jpg",
+    "date_added": "2025-06-06T16:52:10.472Z"
+  }
+},
+{
+  "model": "mangas.manga",
+  "pk": 5,
+  "fields": {
+    "title": "My Hero Academia",
+    "author": "Kōhei Horikoshi",
+    "volumes": 37,
+    "release_date": "2016-06-10",
+    "description": "A superhero-admiring boy enrolls in a prestigious hero academy and learns what it really means to be a hero, after the strongest superhero grants him his own powers.",
+    "cover": "https://m.media-amazon.com/images/I/81AjnD8nvHL.jpg",
+    "date_added": "2025-06-17T02:22:11.716Z"
+  }
+},
+{
+  "model": "mangas.manga",
+  "pk": 6,
+  "fields": {
+    "title": "Death note",
+    "author": "Tsugumi Ohba",
+    "volumes": 6,
+    "release_date": "2025-06-17",
+    "description": "A história segue Light Yagami , um estudante genial do ensino médio que descobre um caderno misterioso: o \"Death Note\", que pertenceu ao shinigami Ryuk , e concede ao usuário a habilidade sobrenatural de matar qualquer um cujo nome esteja escrito em suas páginas.",
+    "cover": "https://m.media-amazon.com/images/I/81v3DRVRVML._UF1000,1000_QL80_.jpg",
+    "date_added": "2025-06-17T20:47:54.113Z"
+  }
+},
+{
+  "model": "mangas.manga",
+  "pk": 9,
+  "fields": {
+    "title": "Mieruko-chan",
+    "author": "Tomoki Izumii",
+    "volumes": 12,
+    "release_date": "2025-06-18",
+    "description": "Ela pode ver pessoas mortas... mas opta por ignorá-las. Esse é o plano de Miko, entretanto, não parece estar funcionando. Esta carta de amor ao gênero de terror dará calafrios em sua espinha e, às vezes, arrancará uma risada.",
+    "cover": "https://m.media-amazon.com/images/I/81HAZtRMQBL.jpg",
+    "date_added": "2025-06-19T02:03:03.154Z"
+  }
+},
+{
+  "model": "mangas.manga",
+  "pk": 10,
+  "fields": {
+    "title": "Jujutsu Kaisen",
+    "author": "Gege Akutami",
+    "volumes": 1,
+    "release_date": "2025-06-18",
+    "description": "Em Jujutsu Kaisen, a vida de um adolescente é virada de cabeça para baixo após entrar em contato com um talismã amaldiçoado. No conceituado anime, o adolescente Yuuji Itadori participa de um clube de ocultismo e acaba se envolvendo com um item perigoso, um dedo amaldiçoado.",
+    "cover": "https://m.media-amazon.com/images/I/81TmHlRleJL._UF1000,1000_QL80_.jpg",
+    "date_added": "2025-06-19T02:07:41.891Z"
+  }
+},
+{
+  "model": "mangas.manga",
+  "pk": 11,
+  "fields": {
+    "title": "Noragami",
+    "author": "Adachitoka",
+    "volumes": 27,
+    "release_date": "2010-12-06",
+    "description": "Noragami é uma série de mangá escrita pela dupla Adachitoka que começou a ser serializada na Monthly Shōnen Magazine da editora Kodansha em janeiro de 2011. Já foi publicada em 27 tankōbon até fevereiro de 2024.",
+    "cover": "https://m.media-amazon.com/images/I/81c15BmyXvL.jpg",
+    "date_added": "2025-06-19T02:11:15.703Z"
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 3,
+  "fields": {
+    "manga": 3,
+    "number": 1,
+    "date_acquired": "2025-06-06",
+    "owned": true
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 4,
+  "fields": {
+    "manga": 3,
+    "number": 2,
+    "date_acquired": "2025-06-06",
+    "owned": true
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 6,
+  "fields": {
+    "manga": 4,
+    "number": 1,
+    "date_acquired": "2025-06-06",
+    "owned": true
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 7,
+  "fields": {
+    "manga": 4,
+    "number": 2,
+    "date_acquired": "2025-06-06",
+    "owned": true
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 8,
+  "fields": {
+    "manga": 4,
+    "number": 3,
+    "date_acquired": "2025-06-06",
+    "owned": true
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 9,
+  "fields": {
+    "manga": 4,
+    "number": 4,
+    "date_acquired": "2025-06-06",
+    "owned": true
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 10,
+  "fields": {
+    "manga": 4,
+    "number": 5,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 11,
+  "fields": {
+    "manga": 4,
+    "number": 6,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 12,
+  "fields": {
+    "manga": 3,
+    "number": 3,
+    "date_acquired": "2025-06-06",
+    "owned": true
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 13,
+  "fields": {
+    "manga": 3,
+    "number": 4,
+    "date_acquired": "2025-06-17",
+    "owned": true
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 14,
+  "fields": {
+    "manga": 3,
+    "number": 5,
+    "date_acquired": "2025-06-17",
+    "owned": true
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 15,
+  "fields": {
+    "manga": 3,
+    "number": 6,
+    "date_acquired": "2025-06-17",
+    "owned": true
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 16,
+  "fields": {
+    "manga": 3,
+    "number": 7,
+    "date_acquired": "2025-06-17",
+    "owned": true
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 17,
+  "fields": {
+    "manga": 3,
+    "number": 8,
+    "date_acquired": "2025-06-17",
+    "owned": true
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 18,
+  "fields": {
+    "manga": 3,
+    "number": 9,
+    "date_acquired": "2025-06-17",
+    "owned": true
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 19,
+  "fields": {
+    "manga": 3,
+    "number": 10,
+    "date_acquired": "2025-06-17",
+    "owned": true
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 20,
+  "fields": {
+    "manga": 3,
+    "number": 11,
+    "date_acquired": "2025-06-17",
+    "owned": true
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 21,
+  "fields": {
+    "manga": 3,
+    "number": 12,
+    "date_acquired": "2025-06-17",
+    "owned": true
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 22,
+  "fields": {
+    "manga": 3,
+    "number": 13,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 23,
+  "fields": {
+    "manga": 3,
+    "number": 14,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 24,
+  "fields": {
+    "manga": 5,
+    "number": 1,
+    "date_acquired": "2025-06-17",
+    "owned": true
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 25,
+  "fields": {
+    "manga": 5,
+    "number": 2,
+    "date_acquired": "2025-06-17",
+    "owned": true
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 26,
+  "fields": {
+    "manga": 5,
+    "number": 3,
+    "date_acquired": "2025-06-17",
+    "owned": true
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 27,
+  "fields": {
+    "manga": 5,
+    "number": 4,
+    "date_acquired": "2025-06-17",
+    "owned": true
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 28,
+  "fields": {
+    "manga": 5,
+    "number": 5,
+    "date_acquired": "2025-06-17",
+    "owned": true
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 29,
+  "fields": {
+    "manga": 5,
+    "number": 6,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 30,
+  "fields": {
+    "manga": 5,
+    "number": 7,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 31,
+  "fields": {
+    "manga": 5,
+    "number": 8,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 32,
+  "fields": {
+    "manga": 5,
+    "number": 9,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 33,
+  "fields": {
+    "manga": 5,
+    "number": 10,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 34,
+  "fields": {
+    "manga": 5,
+    "number": 11,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 35,
+  "fields": {
+    "manga": 5,
+    "number": 12,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 36,
+  "fields": {
+    "manga": 5,
+    "number": 13,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 37,
+  "fields": {
+    "manga": 5,
+    "number": 14,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 38,
+  "fields": {
+    "manga": 5,
+    "number": 15,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 39,
+  "fields": {
+    "manga": 5,
+    "number": 16,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 40,
+  "fields": {
+    "manga": 5,
+    "number": 17,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 41,
+  "fields": {
+    "manga": 5,
+    "number": 18,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 42,
+  "fields": {
+    "manga": 5,
+    "number": 19,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 43,
+  "fields": {
+    "manga": 5,
+    "number": 20,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 44,
+  "fields": {
+    "manga": 5,
+    "number": 21,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 45,
+  "fields": {
+    "manga": 5,
+    "number": 22,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 46,
+  "fields": {
+    "manga": 5,
+    "number": 23,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 47,
+  "fields": {
+    "manga": 5,
+    "number": 24,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 48,
+  "fields": {
+    "manga": 5,
+    "number": 25,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 49,
+  "fields": {
+    "manga": 5,
+    "number": 26,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 50,
+  "fields": {
+    "manga": 5,
+    "number": 27,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 51,
+  "fields": {
+    "manga": 5,
+    "number": 28,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 52,
+  "fields": {
+    "manga": 5,
+    "number": 29,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 53,
+  "fields": {
+    "manga": 5,
+    "number": 30,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 54,
+  "fields": {
+    "manga": 5,
+    "number": 31,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 55,
+  "fields": {
+    "manga": 5,
+    "number": 32,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 56,
+  "fields": {
+    "manga": 5,
+    "number": 33,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 57,
+  "fields": {
+    "manga": 5,
+    "number": 34,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 58,
+  "fields": {
+    "manga": 5,
+    "number": 35,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 59,
+  "fields": {
+    "manga": 5,
+    "number": 36,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 60,
+  "fields": {
+    "manga": 5,
+    "number": 37,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 61,
+  "fields": {
+    "manga": 5,
+    "number": 38,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 62,
+  "fields": {
+    "manga": 5,
+    "number": 39,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 63,
+  "fields": {
+    "manga": 5,
+    "number": 40,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 64,
+  "fields": {
+    "manga": 5,
+    "number": 41,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 65,
+  "fields": {
+    "manga": 5,
+    "number": 42,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 67,
+  "fields": {
+    "manga": 6,
+    "number": 1,
+    "date_acquired": "2025-06-17",
+    "owned": true
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 68,
+  "fields": {
+    "manga": 6,
+    "number": 2,
+    "date_acquired": "2025-06-17",
+    "owned": true
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 69,
+  "fields": {
+    "manga": 6,
+    "number": 3,
+    "date_acquired": "2025-06-17",
+    "owned": true
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 70,
+  "fields": {
+    "manga": 6,
+    "number": 4,
+    "date_acquired": "2025-06-17",
+    "owned": true
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 71,
+  "fields": {
+    "manga": 6,
+    "number": 5,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 72,
+  "fields": {
+    "manga": 6,
+    "number": 6,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 73,
+  "fields": {
+    "manga": 9,
+    "number": 1,
+    "date_acquired": "2025-06-19",
+    "owned": true
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 74,
+  "fields": {
+    "manga": 9,
+    "number": 2,
+    "date_acquired": "2025-06-20",
+    "owned": true
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 75,
+  "fields": {
+    "manga": 9,
+    "number": 3,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 76,
+  "fields": {
+    "manga": 9,
+    "number": 4,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 77,
+  "fields": {
+    "manga": 9,
+    "number": 5,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 78,
+  "fields": {
+    "manga": 9,
+    "number": 6,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 79,
+  "fields": {
+    "manga": 9,
+    "number": 7,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 80,
+  "fields": {
+    "manga": 9,
+    "number": 8,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 81,
+  "fields": {
+    "manga": 9,
+    "number": 9,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 82,
+  "fields": {
+    "manga": 9,
+    "number": 10,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 83,
+  "fields": {
+    "manga": 9,
+    "number": 11,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 84,
+  "fields": {
+    "manga": 9,
+    "number": 12,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 85,
+  "fields": {
+    "manga": 10,
+    "number": 1,
+    "date_acquired": "2025-06-19",
+    "owned": true
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 86,
+  "fields": {
+    "manga": 10,
+    "number": 2,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 87,
+  "fields": {
+    "manga": 10,
+    "number": 3,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 88,
+  "fields": {
+    "manga": 10,
+    "number": 4,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 89,
+  "fields": {
+    "manga": 10,
+    "number": 5,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 90,
+  "fields": {
+    "manga": 10,
+    "number": 6,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 91,
+  "fields": {
+    "manga": 10,
+    "number": 7,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 92,
+  "fields": {
+    "manga": 10,
+    "number": 8,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 93,
+  "fields": {
+    "manga": 10,
+    "number": 9,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 94,
+  "fields": {
+    "manga": 10,
+    "number": 10,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 95,
+  "fields": {
+    "manga": 10,
+    "number": 11,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 96,
+  "fields": {
+    "manga": 10,
+    "number": 12,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 97,
+  "fields": {
+    "manga": 10,
+    "number": 13,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 98,
+  "fields": {
+    "manga": 10,
+    "number": 14,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 99,
+  "fields": {
+    "manga": 10,
+    "number": 15,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 100,
+  "fields": {
+    "manga": 10,
+    "number": 16,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 101,
+  "fields": {
+    "manga": 10,
+    "number": 17,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 102,
+  "fields": {
+    "manga": 10,
+    "number": 18,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 103,
+  "fields": {
+    "manga": 10,
+    "number": 19,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 104,
+  "fields": {
+    "manga": 10,
+    "number": 20,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 105,
+  "fields": {
+    "manga": 10,
+    "number": 21,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 106,
+  "fields": {
+    "manga": 10,
+    "number": 22,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 107,
+  "fields": {
+    "manga": 10,
+    "number": 23,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 108,
+  "fields": {
+    "manga": 10,
+    "number": 24,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 109,
+  "fields": {
+    "manga": 10,
+    "number": 25,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 110,
+  "fields": {
+    "manga": 10,
+    "number": 26,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 111,
+  "fields": {
+    "manga": 10,
+    "number": 27,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 112,
+  "fields": {
+    "manga": 10,
+    "number": 28,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 113,
+  "fields": {
+    "manga": 10,
+    "number": 29,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 114,
+  "fields": {
+    "manga": 10,
+    "number": 30,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 115,
+  "fields": {
+    "manga": 11,
+    "number": 1,
+    "date_acquired": "2025-06-19",
+    "owned": true
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 116,
+  "fields": {
+    "manga": 11,
+    "number": 2,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 117,
+  "fields": {
+    "manga": 11,
+    "number": 3,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 118,
+  "fields": {
+    "manga": 11,
+    "number": 4,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 119,
+  "fields": {
+    "manga": 11,
+    "number": 5,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 120,
+  "fields": {
+    "manga": 11,
+    "number": 6,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 121,
+  "fields": {
+    "manga": 11,
+    "number": 7,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 122,
+  "fields": {
+    "manga": 11,
+    "number": 8,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 123,
+  "fields": {
+    "manga": 11,
+    "number": 9,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 124,
+  "fields": {
+    "manga": 11,
+    "number": 10,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 125,
+  "fields": {
+    "manga": 11,
+    "number": 11,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 126,
+  "fields": {
+    "manga": 11,
+    "number": 12,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 127,
+  "fields": {
+    "manga": 11,
+    "number": 13,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 128,
+  "fields": {
+    "manga": 11,
+    "number": 14,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 129,
+  "fields": {
+    "manga": 11,
+    "number": 15,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 130,
+  "fields": {
+    "manga": 11,
+    "number": 16,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 131,
+  "fields": {
+    "manga": 11,
+    "number": 17,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 132,
+  "fields": {
+    "manga": 11,
+    "number": 18,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 133,
+  "fields": {
+    "manga": 11,
+    "number": 19,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 134,
+  "fields": {
+    "manga": 11,
+    "number": 20,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 135,
+  "fields": {
+    "manga": 11,
+    "number": 21,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 136,
+  "fields": {
+    "manga": 11,
+    "number": 22,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 137,
+  "fields": {
+    "manga": 11,
+    "number": 23,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 138,
+  "fields": {
+    "manga": 11,
+    "number": 24,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 139,
+  "fields": {
+    "manga": 11,
+    "number": 25,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 140,
+  "fields": {
+    "manga": 11,
+    "number": 26,
+    "date_acquired": null,
+    "owned": false
+  }
+},
+{
+  "model": "mangas.chapter",
+  "pk": 141,
+  "fields": {
+    "manga": 11,
+    "number": 27,
+    "date_acquired": null,
+    "owned": false
+  }
+}
+]
